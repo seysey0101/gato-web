@@ -1,0 +1,283 @@
+<html>
+ <head>
+  <title>
+   Commands
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #111;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .navbar .invite-button {
+            background-color: #7289da;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 10px; /* Adjusted to move the button slightly to the left */
+        }
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .commands {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .command-card {
+            background-color: #1a1a1a;
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px; /* Increased width for more space */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+            position: relative;
+        }
+        .command-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+        .command-card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+        .command-card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #b0b0b0;
+        }
+        .command-card .separator {
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+        .command-card .details {
+            display: flex;
+            flex-direction: column; /* Change to column for vertical alignment */
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .command-card .details div {
+            display: flex; /* Change to flex for horizontal alignment */
+            justify-content: space-between; /* Space between label and value */
+            margin-bottom: 10px; /* Add spacing between each detail */
+        }
+        .command-card .details div span {
+            margin-left: 5px; /* Add slight spacing to the left of value */
+            color: #e0e0e0;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #b0b0b0;
+        }
+        .footer a {
+            color: #7289da;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="Logo" height="40" src="https://images.ctfassets.net/ub3bwfd53mwy/5WFv6lEUb1e6kWeP06CLXr/acd328417f24786af98b1750d90813de/4_Image.jpg?w=750" width="40"/>
+    <span>
+     Gato
+    </span>
+   </div>
+   <a class="invite-button" href="https://discord.com/oauth2/authorize?client_id=1290741756182396980&permissions=8&integration_type=0&scope=bot">
+    Invite
+   </a>
+  </div>
+  <div class="content">
+   <h1>
+    <i class="fas fa-terminal"></i>
+    Commands
+   </h1>
+   <div class="commands">
+    <div class="command-card">
+     <h2>
+      trigger
+     </h2>
+     <p>
+        Set a status trigger for assigning roles.
+     </p>
+     <div class="separator"></div>
+     <div class="details">
+      <div class="aliases">
+       <span>Aliases:</span>
+       <span>N/A</span>
+      </div>
+      <div class="permissions">
+       <span>Permissions:</span>
+       <span>Manage Guild</span>
+      </div>
+      <div class="arguments">
+       <span>Arguments:</span>
+       <span>N/A</span>
+      </div>
+     </div>
+    </div>
+    <div class="command-card">
+     <h2>
+      afk
+     </h2>
+     <p>
+      Set an AFK status.
+     </p>
+     <div class="separator"></div>
+     <div class="details">
+      <div class="aliases">
+       <span>Aliases:</span>
+       <span>N/A</span>
+      </div>
+      <div class="permissions">
+       <span>Permissions:</span>
+       <span>N/A</span>
+      </div>
+      <div class="arguments">
+       <span>Arguments:</span>
+       <span>reason</span>
+      </div>
+     </div>
+    </div>
+    <div class="command-card">
+     <h2>
+      ping
+     </h2>
+     <p>
+      Give the latency of the bot.
+     </p>
+     <div class="separator"></div>
+     <div class="details">
+      <div class="aliases">
+       <span>Aliases:</span>
+       <span>N/A</span>
+      </div>
+      <div class="permissions">
+       <span>Permissions:</span>
+       <span>N/A</span>
+      </div>
+      <div class="arguments">
+       <span>Arguments:</span>
+       <span>N/A</span>
+      </div>
+     </div>
+    </div>
+
+    <div class="command-card">
+        <h2>
+         lens
+        </h2>
+        <p>
+         Reverse image search.
+        </p>
+        <div class="separator"></div>
+        <div class="details">
+         <div class="aliases">
+          <span>Aliases:</span>
+          <span>N/A</span>
+         </div>
+         <div class="permissions">
+          <span>Permissions:</span>
+          <span>N/A</span>
+         </div>
+         <div class="arguments">
+          <span>Arguments:</span>
+          <span>N/A</span>
+         </div>
+        </div>
+    </div>
+       
+    <div class="command-card">
+        <h2>
+         image
+        </h2>
+        <p>
+         image search.
+        </p>
+        <div class="separator"></div>
+        <div class="details">
+         <div class="aliases">
+          <span>Aliases:</span>
+          <span>img, search</span>
+         </div>
+         <div class="permissions">
+          <span>Permissions:</span>
+          <span>N/A</span>
+         </div>
+         <div class="arguments">
+          <span>Arguments:</span>
+          <span>N/A</span>
+         </div>
+        </div>
+    </div>
+
+    <div class="command-card">
+     <h2>
+      avatar
+     </h2>
+     <p>
+      Display your avatar in the chat.
+     </p>
+     <div class="separator"></div>
+     <div class="details">
+      <div class="aliases">
+       <span>Aliases:</span>
+       <span>N/A</span>
+      </div>
+      <div class="permissions">
+       <span>Permissions:</span>
+       <span>N/A</span>
+      </div>
+      <div class="arguments">
+       <span>Arguments:</span>
+       <span>alias, command</span>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <a href="terms.html">Terms of service</a>
+   <a href="privacy-policy.html">Privacy policy</a>
+  </div>
+ </body>
+</html>
